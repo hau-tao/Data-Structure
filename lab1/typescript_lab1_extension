@@ -1,0 +1,25 @@
+Script started on Mon 18 Jan 2016 10:27:22 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ g++ lab1_extension.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+1+2
+12+
+Evaluation result: 3
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+1*2+5
+12*5+
+Evaluation result: 7
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+2+3*2
+232*+
+Evaluation result: 8
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+(1+2)/(1+1)^[[D      0)
+12+10+/
+Evaluation result: 3
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ exit
+
+Script done on Mon 18 Jan 2016 10:28:56 PM PST

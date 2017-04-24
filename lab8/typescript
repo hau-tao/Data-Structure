@@ -1,0 +1,7 @@
+Script started on Wed 09 Mar 2016 10:05:31 AM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab8hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab8$ g++ Set_test.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab8hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab8$ ./a.out
+All tests passed.
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab8hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab8$ exit
+
+Script done on Wed 09 Mar 2016 10:05:44 AM PST

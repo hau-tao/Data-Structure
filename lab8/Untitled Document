@@ -1,0 +1,105 @@
+#ifndef SET_H
+#define SET_H
+
+// Set.h - an implementation of Set using Node and Set_iterator
+
+using namespace std;
+
+template <class T> class Set;
+template <class T> class Set_iterator;
+
+template <class T>
+class Node {
+public:
+	Node(): value(0), parent(0), leftChild(0), rightChild(0) { }
+	Node(const T & x, Node * p, Node * lc, Node * rc):
+		value(x), parent(p), leftChild(lc), rightChild(rc) { }
+        // here copy constructor and assignment op don't make too much sense!
+        Node(const Node & n): 
+                value(n.value), parent(0), leftChild(0), rightChild(0) { }
+        Node & operator=(const Node & n) { value = n.value; return *this; }
+
+	~Node() { delete leftChild; delete rightChild; } // this is very recursive, delete also calls the destructor of the object it is deleting
+
+	void insert(Node<T> * newNode); // this is a helper func for Set::insert()
+	Node * find(const T & x);
+	Node * merge(Node<T> * left, Node<T> * right);
+protected:
+	T value;
+	Node * parent;
+	Node * leftChild;
+	Node * rightChild;
+
+friend class Set<T>;
+friend class Set_iterator<T>;
+};
+
+// Your code for Node goes here ...
+
+template <class T>
+class Set {
+public:
+	typedef Set_iterator<T> iterator;
+
+	Set(): root(0), my_size(0) { }
+
+	// the big three
+	Set(const Set<T> & );
+	~Set() { delete root; }
+	Set operator=(const Set & );
+
+	bool empty() const { return root == 0; }
+	unsigned int size() const { return my_size; }
+	iterator insert(const T & x); // return an iterator to x if it already exists, otherwise insert and return an iterator to x
+	void erase(const iterator & it);
+	void erase(const T & x) { root = remove(root, x); }
+	unsigned int count(const T & x) const; // returns 1 or 0 because this is a set, not a multi-set
+	iterator find(const T & x) const;
+	iterator begin() const; // for in-order traversal
+	iterator end() const { return iterator(0); }
+protected:
+	Node<T> * root;
+	unsigned int my_size;
+	Node<T> * remove(Node<T> *, const T &);
+};
+
+template <class T>
+Set<T>::Set(const Set<T> & op)
+{
+      root = 0;
+      for (iterator i = op.begin(); i != op.end(); ++i)
+              insert(*i);
+}
+
+template <class T>
+Set<T> Set<T>::operator=(const Set<T> & op)
+{
+      delete root;
+      root = 0;
+      for (iterator i = op.begin(); i != op.end(); ++i)
+              insert(*i);
+      return *this;
+}
+
+// More code for Set goes here ...
+
+template <class T>
+class Set_iterator {
+public:
+	Set_iterator(): n(0) { }
+	Set_iterator(Node<T> * newNode): n(newNode) { }
+
+	bool operator==(Set_iterator it) const { return n == it.n; }
+	bool operator!=(Set_iterator it) const { return n != it.n; }
+	Set_iterator & operator++(); // inorder traversal, pre-increment
+	Set_iterator operator++(int); // inorder traversal, post-increment
+	T & operator*() { return n->value; }
+	Set_iterator & operator=(Set_iterator<T> it) { n = it.n; return *this; }
+protected:
+	Node<T> * n;
+friend class Set<T>;
+};
+
+// More code for Set_iterator goes here ...
+
+#endif

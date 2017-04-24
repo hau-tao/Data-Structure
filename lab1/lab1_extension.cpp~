@@ -1,0 +1,122 @@
+/********************************************************************************
+ * Hau Tao
+ * lab1.cpp
+ * 01/17/2016
+ * This program implement infix-to-postfix expression conversion 
+ * Valid operands are single digits and characters: 0-9 a-z A-Z
+ * For example,   a + b - c     translates to   a b + c -
+ *                a + b * c     translates to   a b c * +
+ *               (a + 2) / (5 - d)   	goes to   a 2 + 5 d - /
+ *               a + ((b - c) * d) / e   to   	a b c - d * e / +
+ * Valid operators are: + - * / ( )
+ * Highest precedence:  * /
+ * Lowest precedence:   + -
+ * ( has lowest precedence on the stack and highest precedence outside of stack.
+ * ) never goes on stack.
+ * Bottom of the stack has the lowest precedence than any operator.
+ * Use a prec() function to compare the precedence of the operators based on the above rules.
+ ********************************************************************************/
+#include <iostream>
+#include <stack>
+using namespace std;
+int prec(char );
+char evaluation_stack(char , char , char );
+void  get_operand(stack<int> & evaluation, stack <int> & my_stack);
+main()
+{
+    char in, operand_1, operand_2 , result;
+	stack <int> my_stack;
+	stack <int> evaluation;
+	cout <<"Enter your input " << endl;
+	cin >> in ;
+	while(!cin.eof()){
+		if((in >='a' && in <= 'z' )||(in >= '0' && in <= '9')|| (in >= 'A' && in <= 'Z')){
+			cout << in;
+			evaluation.push(in-'0');
+		}
+		else {
+			if(in == '(')
+				my_stack.push(in);
+			else if (in == ')'){
+				if(!my_stack.empty() && my_stack.top() != '('  ){
+					cout <<char( my_stack.top());
+					get_operand(evaluation, my_stack);
+					my_stack.pop();
+					
+					
+
+				} else
+					cout <<"Error: No matching '('";
+				
+			}
+			else if (in =='*'|| in =='/'|| in =='+'|| in=='-'){
+				if(my_stack.empty() || prec(my_stack.top()) < prec(in))
+					my_stack.push(in);
+				else {
+					cout << char(my_stack.top());
+					get_operand(evaluation, my_stack);
+					my_stack.pop();
+					my_stack.push(in);
+				}
+			}
+			else
+				cout << "Error input:";
+		}
+		cin >> in;
+	}
+
+	// print out the stack when stopping input
+	while(!my_stack.empty()){
+		if(my_stack.top()!= '('){
+			cout << char(my_stack.top());
+			get_operand(evaluation, my_stack);
+
+			my_stack.pop();
+		} else
+		      my_stack.pop();
+	}
+	cout << endl;
+	cout <<"Evaluation result: ";
+	while(!evaluation.empty()){
+		cout << evaluation.top();
+		evaluation.pop();
+	}
+	cout << endl;
+
+}
+
+// check precedence
+int prec(char in )
+{
+	if(in =='*'|| in =='/')
+		return 2;
+	else if (in =='+'|| in =='-')
+		return 1;
+	else
+		return 0;
+	
+}
+
+char evaluation_stack(char operators, char operand_1, char operand_2){
+	
+	if(operators == '*')
+		return (operand_1 * operand_2) ;
+	else if (operators == '/')
+		return (operand_1 / operand_2)  ;
+	else if (operators == '+')
+		return (operand_1 + operand_2);
+	else if (operators == '-')
+		return (operand_1 - operand_2);
+
+}
+void   get_operand(stack<int> & evaluation, stack <int> & my_stack){
+	char operand_1, operand_2, result;
+	operand_2 = evaluation.top();
+	evaluation.pop();
+	operand_1 = evaluation.top();
+	evaluation.pop();
+	result = evaluation_stack(char(my_stack.top()), operand_1, operand_2);
+	evaluation.push(result);
+	
+
+}

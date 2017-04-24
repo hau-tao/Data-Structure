@@ -1,0 +1,16 @@
+Script started on Sun 20 Mar 2016 01:51:39 PM PDT
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab9hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab9$ ./heap_sort
+15 19 10 7 17 16
+Heap sort (integer input):
+ 7 10 15 16 17 19
+Califonia
+Ohio
+Seattle
+Massachuset
+Chicago
+Florida
+Virgina
+Heap sort (string input): Califonia Chicago Florida Massachuset Ohio Seattle Virgina
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab9hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab9$ exit
+
+Script done on Sun 20 Mar 2016 01:52:28 PM PDT

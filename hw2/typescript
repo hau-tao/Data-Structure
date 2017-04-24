@@ -1,0 +1,13 @@
+Script started on Sun 07 Feb 2016 06:07:44 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/hw2hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/hw2$ g++ String.cpp String_test.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/hw2hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/hw2$ ./a.out
+s4: abcabcabc
+s5: hello cse330 hello cse330 
+s7: colon
+s8: co
+s11: cse is great
+s12: cse is great, love it
+SUCCESS
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/hw2hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/hw2$ exit
+
+Script done on Sun 07 Feb 2016 06:08:07 PM PST

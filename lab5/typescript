@@ -1,0 +1,13 @@
+Script started on Tue 23 Feb 2016 11:47:29 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab5hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab5$ g++ List_test.cpp List.h
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab5hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab5$ ./a.out
+SUCCESS
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab5hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab5$ g++ test.cpp List.h
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab5hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab5$ ./a.out
+44
+33
+11
+22
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab5hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab5$ exit
+
+Script done on Tue 23 Feb 2016 11:48:11 PM PST

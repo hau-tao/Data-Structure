@@ -1,0 +1,9 @@
+Script started on Wed 02 Mar 2016 12:25:55 AM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab7hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab7$ g++ Deque_test.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab7hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab7$ ./a.out
+3 2 1 0 
+0 1 2 3 
+SUCCESS
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab7hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab7$ exit
+
+Script done on Wed 02 Mar 2016 12:26:10 AM PST

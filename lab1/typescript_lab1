@@ -1,0 +1,21 @@
+Script started on Mon 18 Jan 2016 10:25:33 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ g++ lab1.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+a+b
+ab+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+a*b+c
+ab*c+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+a+b*c
+abc*+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ ./a.out
+Enter your input 
+(a+b)*(c+d)
+ab+cd+*
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab1$ exit
+
+Script done on Mon 18 Jan 2016 10:26:38 PM PST

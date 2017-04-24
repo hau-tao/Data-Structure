@@ -1,0 +1,35 @@
+Script started on Sun 21 Feb 2016 04:45:23 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW3hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW3$ g++ -o orderedList orderList[K[K[K[KedList.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW3hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW3$ ./orderedList
+selection sort of list c 
+1
+2
+4
+5
+8
+10
+selection sort of list d 
+1
+2
+3
+4
+5
+9
+Union list 
+1
+2
+3
+4
+5
+8
+9
+10
+Intersect list
+1
+2
+4
+5
+SUCCESS
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW3hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW3$ exit
+
+Script done on Sun 21 Feb 2016 04:45:58 PM PST

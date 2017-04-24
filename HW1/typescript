@@ -1,0 +1,22 @@
+Script started on Sun 31 Jan 2016 02:35:57 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ g++ -o variance variance.cpp
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ ./variance
+The number of input is: 0
+Try again
+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ ./variance
+1
+The number of input is: 1
+Try again
+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ ./variance <out
+The number of input is: 101
+Try again
+
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ ./variance.test[K[K[K[K[K<test.txt
+The number of input is: 8
+The average value is: 8.375
+The variance value is: 41.9821
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/HW1hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/HW1$ exit
+
+Script done on Sun 31 Jan 2016 02:36:55 PM PST

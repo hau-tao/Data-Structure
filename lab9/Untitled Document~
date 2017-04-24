@@ -1,0 +1,29 @@
+ifndef PRIORITY_QUEUE_H
+#define PRIORITY_QUEUE_H
+
+// Priority_queue.h  -- a priority_queue implemented as a heap
+
+#include <vector>
+
+using namespace std;
+
+template <class T> 
+class Priority_queue {
+public:
+   Priority_queue() : c() { }
+   Priority_queue(const Priority_queue & p): c(p.c) { }
+   Priority_queue & operator=(const Priority_queue & p) { c = p.c; return *this; }
+   // vector destructor is automatically called when an obj of type Priority_queue is destroyed
+
+   bool empty() { return c.empty(); }
+   unsigned int size() { return c.size(); }
+   void push(const T & x);
+   void pop(); 
+   T & top() { return c.front(); }
+private:
+   vector<T> c;
+};
+
+// your code goes here ...
+
+#endif

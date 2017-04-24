@@ -1,0 +1,13 @@
+Script started on Tue 02 Feb 2016 09:40:45 PM PST
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ g++ -c String.cpp
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ g++ -c String_test.cpp
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ g++ -c test.cpp
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ g++ String.o String_test.o
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ ./a.out
+SUCCESS
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ g++ String.o test.o 
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ ./a.out
+abcd <= abe
+hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/Lab3$ exit
+
+Script done on Tue 02 Feb 2016 09:41:42 PM PST

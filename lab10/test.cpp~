@@ -1,0 +1,21 @@
+
+// Small test.cpp to test Map
+
+#include <iostream>
+#include <cassert>
+
+#include "Map.h"
+#include <string>
+
+using namespace std;
+
+int main()
+{
+   Map<string, long> counts;
+
+   counts["abb"] = 5;
+   counts["baa"] = 2;
+   counts["cbd"] = 3;
+   //counts["bas"] = 7;
+   cout << counts["abb"]  << endl;
+}

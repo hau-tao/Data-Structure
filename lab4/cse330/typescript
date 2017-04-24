@@ -1,0 +1,7 @@
+Script started on Tue 09 Feb 2016 10:37:38 PM PST
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab4/cse330hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab4/cse330$ g++ test.cpp Vector.h
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab4/cse330hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab4/cse330$ ./a.out
+SUCCESS
+]0;hau@hau-Lenovo-Y50-70: ~/Desktop/CSE 330/lab4/cse330hau@hau-Lenovo-Y50-70:~/Desktop/CSE 330/lab4/cse330$ exit
+
+Script done on Tue 09 Feb 2016 10:37:54 PM PST
