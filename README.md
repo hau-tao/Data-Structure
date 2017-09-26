@@ -1,24 +1,24 @@
 # Data-Structure
 Leaning basic data structures using C++ STL
 
-*Convert infix to postfix (Stack)
+* Convert infix to postfix (Stack)
 
 * Insertion/Buble/Quick Sort (Vectors) and Time Complexity
 
-*Implement String STL
+* Implement String STL
 
-*Vectors STL
+* Vectors STL
 
-*List STL
+* List STL
 
-*Stack
+* Stack
 
-*Deque
+* Deque
 
-*Set
+* Set
 
-*Tree
+* Tree
 
-*Priority Queue
+* Priority Queue
 
-*Map
+* Map
